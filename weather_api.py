@@ -77,8 +77,6 @@ def weather_endpoint():
     requested_name = json_data.get("requested_name")
 
     response = generate_weather(json_data)
-    print(response)
-    print(response['location'])
     timestamp = dt.datetime.now()
     date = dt.date.today()
     date = date.strftime("%d/%m/%Y")
